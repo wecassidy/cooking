@@ -20,7 +20,7 @@ public class Apple extends Food implements Bakeable, Fryable, Boilable,
 	}
 
 	@Override
-	public Food boil(int temp, int time) {
+	public Food boil(int time) {
 		return null;
 	}
 

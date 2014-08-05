@@ -25,7 +25,7 @@ public abstract class Food {
 	 */
 	private double fresh;
 
-	private boolean[] attributes;
+	public Metadata properties;
 
 	/**
 	 * Create a food with all falsy values ({@code 0} for {@code int}s,
@@ -37,7 +37,7 @@ public abstract class Food {
 		this.ENERGY = 0;
 		this.COST = 0;
 		this.fresh = 1;
-		attributes = new boolean[6];
+		this.properties = new Metadata();
 	}
 
 	/**
@@ -51,7 +51,7 @@ public abstract class Food {
 		this.ENERGY = 0;
 		this.COST = 0;
 		this.fresh = 1;
-		attributes = new boolean[6];
+		this.properties = new Metadata();
 	}
 
 	/**
@@ -66,7 +66,7 @@ public abstract class Food {
 		this.ENERGY = energy;
 		this.COST = 0;
 		this.fresh = 1;
-		attributes = new boolean[6];
+		this.properties = new Metadata();
 	}
 
 	/**
@@ -82,7 +82,7 @@ public abstract class Food {
 		this.ENERGY = energy;
 		this.COST = cost;
 		this.fresh = 1;
-		attributes = new boolean[6];
+		this.properties = new Metadata();
 	}
 
 	/**
@@ -95,11 +95,11 @@ public abstract class Food {
 	 * @param att an array of attributes for the food (baked, boiled, shredded,
 	 *            etc)
 	 */
-	public Food(int size, int energy, double cost, boolean[] att) {
+	public Food(int size, int energy, double cost, Metadata meta) {
 		this.SIZE = size;
 		this.ENERGY = energy;
 		this.COST = cost;
-		this.attributes = att;
+		this.properties = meta;
 	}
 
 	/**
