@@ -25,6 +25,8 @@ public abstract class Food {
 	 */
 	private double fresh;
 
+	private boolean[] attributes;
+
 	/**
 	 * Create a food with all falsy values ({@code 0} for {@code int}s,
 	 * {@code false} for {@code boolean}s, and {@code null} for reference
@@ -35,6 +37,7 @@ public abstract class Food {
 		this.ENERGY = 0;
 		this.COST = 0;
 		this.fresh = 1;
+		attributes = new boolean[6];
 	}
 
 	/**
@@ -48,6 +51,7 @@ public abstract class Food {
 		this.ENERGY = 0;
 		this.COST = 0;
 		this.fresh = 1;
+		attributes = new boolean[6];
 	}
 
 	/**
@@ -62,6 +66,7 @@ public abstract class Food {
 		this.ENERGY = energy;
 		this.COST = 0;
 		this.fresh = 1;
+		attributes = new boolean[6];
 	}
 
 	/**
@@ -77,6 +82,24 @@ public abstract class Food {
 		this.ENERGY = energy;
 		this.COST = cost;
 		this.fresh = 1;
+		attributes = new boolean[6];
+	}
+
+	/**
+	 * Create a food with a given size, energy, and cost and default values for
+	 * the rest (see {@link #Food()} for those values).
+	 * 
+	 * @param size the amount of space required to store the food
+	 * @param energy the energy gained by eating the food
+	 * @param cost the price of the food
+	 * @param att an array of attributes for the food (baked, boiled, shredded,
+	 *            etc)
+	 */
+	public Food(int size, int energy, double cost, boolean[] att) {
+		this.SIZE = size;
+		this.ENERGY = energy;
+		this.COST = cost;
+		this.attributes = att;
 	}
 
 	/**
