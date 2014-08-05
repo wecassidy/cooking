@@ -1,4 +1,4 @@
-package entities.food;
+package food;
 
 public class Metadata {
 	public boolean baked;

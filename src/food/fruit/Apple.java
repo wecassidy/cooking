@@ -1,12 +1,12 @@
-package entities.food.fruit.apple;
+package food.fruit;
 
-import entities.food.Food;
-import entities.food.baketypes.Bakeable;
-import entities.food.baketypes.Boilable;
-import entities.food.baketypes.Cutable;
-import entities.food.baketypes.Dryable;
-import entities.food.baketypes.Fryable;
-import entities.food.baketypes.Shredable;
+import food.Food;
+import food.baketypes.Bakeable;
+import food.baketypes.Boilable;
+import food.baketypes.Cutable;
+import food.baketypes.Dryable;
+import food.baketypes.Fryable;
+import food.baketypes.Shredable;
 
 public class Apple extends Food implements Bakeable, Fryable, Boilable,
 		Shredable, Cutable, Dryable {
@@ -36,12 +36,12 @@ public class Apple extends Food implements Bakeable, Fryable, Boilable,
 
 	@Override
 	public Food[] cut() {
-		return new AppleSlice[5];
+		return null;
 	}
 
 	@Override
 	public Food[] shred() {
-		return new AppleShred[50];
+		return null;
 	}
 
 	@Override

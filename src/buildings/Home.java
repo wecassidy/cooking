@@ -7,10 +7,10 @@ import buildings.furnishings.Counter;
 import buildings.furnishings.Furnishing;
 import buildings.furnishings.Sink;
 import buildings.furnishings.Stove;
-import entities.food.Food;
 import error.NoSuchFurnishingIDError;
 import error.NotEnoughSpaceInKitchenError;
 import error.OutOfStorageSpaceError;
+import food.Food;
 
 public class Home extends Building {
 	private List<Furnishing> contents;
@@ -32,8 +32,7 @@ public class Home extends Building {
 	 * instead as this method essentially fills up {@link Furnishing}s in the
 	 * order bought, instead of where the user wants them.
 	 * 
-	 * @param f
-	 *            the food to be added to the kitchen
+	 * @param f the food to be added to the kitchen
 	 */
 	public void addFood(Food f) throws NotEnoughSpaceInKitchenError,
 			OutOfStorageSpaceError {

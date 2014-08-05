@@ -4,8 +4,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 import run.IDManager;
-import entities.food.Food;
 import error.OutOfStorageSpaceError;
+import food.Food;
 
 public abstract class Furnishing {
 	private final int STORAGE;

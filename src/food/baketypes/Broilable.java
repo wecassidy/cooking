@@ -1,6 +1,6 @@
-package entities.food.baketypes;
+package food.baketypes;
 
-import entities.food.Food;
+import food.Food;
 
 public interface Broilable {
 	public Food broil(int temp, int time);

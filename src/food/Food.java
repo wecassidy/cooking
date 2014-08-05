@@ -1,4 +1,4 @@
-package entities.food;
+package food;
 
 /**
  * Represents a food with a certain size, price, time until it spoils,

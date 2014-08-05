@@ -1,7 +1,7 @@
 package buildings.furnishings;
 
-import entities.food.Cookable;
-import entities.food.Food;
+import food.Food;
+import food.baketypes.Bakeable;
 
 public class Oven extends Furnishing {
 	private int low;
@@ -40,8 +40,8 @@ public class Oven extends Furnishing {
 		this.on = on;
 	}
 
-	public Food bake(Cookable food, int time, int temperature) {
-		return food.bakeFor(temperature, time);
+	public Food bake(Bakeable food, int time, int temperature) {
+		return food.bake(temperature, time);
 	}
 
 }

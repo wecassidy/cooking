@@ -1,6 +1,6 @@
 package buildings.furnishings;
 
-import entities.food.Food;
+import food.Food;
 
 public class Sink extends Furnishing {
 	public Sink() {
