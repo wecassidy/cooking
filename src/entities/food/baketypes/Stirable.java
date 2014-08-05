@@ -2,6 +2,6 @@ package entities.food.baketypes;
 
 import entities.food.Food;
 
-public interface Boilable {
-	public Food boil(int time);
+public interface Stirable {
+	public Food stir(int time);
 }
