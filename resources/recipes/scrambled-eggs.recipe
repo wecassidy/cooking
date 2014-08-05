@@ -1,0 +1,70 @@
+{
+	"ingredients": {
+		"eggs": {
+			"amount": 3,
+			"units": null
+		},
+		"milk": {
+			"amount": 0.25,
+			"units": "cup"
+		}
+	},
+
+	"steps": [
+		[
+			{
+				"name": "add",
+				"ingredients": {
+					"eggs": {
+						"amount": "all",
+						"units": null
+					},
+					"milk": {
+						"amount": "all",
+						"units": "cup"
+					}
+				},
+
+				"to": "bowl"
+			},
+
+			{
+				"name": "mix",
+				"item": "bowl",
+				"repeat": false
+			}
+		],
+
+		[
+			{
+				"name": "heat",
+				"item": "pan",
+				"on": "stove",
+				"temp": "medium"
+			},
+
+			{
+				"name": "pour",
+				"from": "bowl",
+				"into": "pan"
+			}
+		],
+
+		[
+			{
+				"name": "fry",
+				"item": "pan",
+				"time": {
+					"amount": 3,
+					"units": "min"
+				}
+			},
+
+			{
+				"name": "mix",
+				"item": "pan",
+				"repeat": "occasionally"
+			}
+		]
+	]
+}
