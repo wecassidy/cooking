@@ -13,7 +13,7 @@
 	"steps": [
 		[
 			{
-				"name": "add",
+				"action": "add",
 				"ingredients": {
 					"eggs": {
 						"amount": "all",
@@ -29,7 +29,7 @@
 			},
 
 			{
-				"name": "mix",
+				"action": "mix",
 				"item": "bowl",
 				"repeat": false
 			}
@@ -37,14 +37,14 @@
 
 		[
 			{
-				"name": "heat",
+				"action": "heat",
 				"item": "pan",
 				"on": "stove",
 				"temp": "medium"
 			},
 
 			{
-				"name": "pour",
+				"action": "pour",
 				"from": "bowl",
 				"into": "pan"
 			}
@@ -52,7 +52,7 @@
 
 		[
 			{
-				"name": "fry",
+				"action": "fry",
 				"item": "pan",
 				"time": {
 					"amount": 3,
@@ -61,7 +61,7 @@
 			},
 
 			{
-				"name": "mix",
+				"action": "mix",
 				"item": "pan",
 				"repeat": "occasionally"
 			}

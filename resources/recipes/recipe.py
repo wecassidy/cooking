@@ -1,6 +1,6 @@
 import json
 
-recipeFile = "scrambled-eggs.recipe"
+recipeFile = "scrambled-eggs.rcp"
 
 recipe = json.load(open(recipeFile))
 

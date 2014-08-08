@@ -1,0 +1,27 @@
+Underlying format: JSON
+Extension: .rcp
+File structure:
+{
+	"ingredients": {
+		"//": "comments can be added like this",
+		"#": "or like this"
+		<ingredient_1_name>: {
+			"amount": <amount [number]>,
+			"units": <units [string or null if unitless]
+		},
+		<ingredient_2_name>: {
+			"amount": <amount [number]>,
+			"units": <units [string or null if unitless]
+		},
+		etc.
+	},
+	
+	"steps": [
+		{
+			"action": <action_name ("heat", "mix", "pour", "add", "fry", "bake", or "boil")>,
+			"ingredients": {
+				
+			}
+		}
+	]
+}
