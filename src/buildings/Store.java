@@ -16,7 +16,7 @@ public abstract class Store extends Building {
 		return this.goods;
 	}
 
-	public void addItems(Furnishing item) {
+	public void addItem(Furnishing item) {
 		this.goods.add(item);
 	}
 
